@@ -38,6 +38,9 @@
   <!-- Content -->
   <script src="/assets/js/xy-polyfill.js" nomodule></script>
   <script src="/assets/js/script.js" type="module"></script>
+
+  <img src='images/bp-image.png' alt='boilerplate'>
+
 </body>
 </html>
 
@@ -46,9 +49,6 @@
 
 <html lang="en" class="no-js">
 
-
-lang Language tag syntax MDN
-I use the no-js class in case I want to apply styling to specific components in browsers that don’t support JavaScript. This class will be removed in browsers that support and execute modern JavaScript.
 
 <meta charset="UTF-8">
 
@@ -66,18 +66,15 @@ I use the no-js class in case I want to apply styling to specific components in 
 
 <link rel="stylesheet" href="css/print.css" media="print">
 
-<meta name="description" content="Page description">
-The unique description of the page, for example, displayed on search result pages. It can be any length, but search engines truncate snippets to ~155–160 characters.
+<meta name="description" content="The unique description of the page, for example, displayed on search result pages. It can be any length, but search engines truncate snippets to ~155–160 characters.">
 
-<meta property="og:title" content="<?php echo $thispage; ?>">
-The unique title of the page. Used by URL scrapers on social media platforms like Twitter or Facebook.
+
+<meta property="og:title" content="Boilerplate">
 
 <meta property="og:description" content="Page description">
-The unique description of the page. Used by URL scrapers on social media platforms like Twitter or Facebook.
 
 <meta property="og:image" content="image/bp-image.png">
 
-Twitter Developer Docs: Cards
 <meta property="og:image:alt" content="Bolierplate image. The rugged industrial age.">
 
 
@@ -90,18 +87,12 @@ Twitter Developer Docs: Cards
 
 <meta name="twitter:card" content="summary_large_image">
 
-Icons and address bar
 <meta name="theme-color" content="#FF00FF">
-theme-color provides browsers with a CSS color to customize the display of the page or of the surrounding user interface.
 
-Supported browsers: Chrome, Brave and Samsung Internet on Android.
-
-Pink UI in Brave browser
 <link rel="icon" href="/favicon.ico">
-A 32×32px favicon for legacy browsers. It should live in the root of your website.
 
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-Most modern browser support SVG favicons. The benefits of the favicon.svg are that it looks better when it’s scaled, because it’s a vector and not raster image, and we can add HTML and CSS to the SVG, which means that we can support dark mode.
+
 
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
 <style>
@@ -132,39 +123,15 @@ For Android devices we need a .webmanifest file, which provides browsers with th
 }
 How to Favicon in 2021: Six files that fit most needs
 <link rel="canonical" href="https://www.mywebsite.com/page">
-Use the canonical link element to prevent SEO issues caused by duplicate content by specifying the original source for pages that are available on multiple URLs.
+
 
 <script src="/assets/js/xy-polyfill.js" nomodule></script>
-If I want to serve JavaScript targeted specifically at browsers that don’t support modules, I add the nomodule attribute, which causes the script to only run in legacy browsers, namely IE 11.
+
 
 <script src="/assers/js/script.js" type="module"></script>
-JavaScript with the type="module" will only run in browsers that support modules, it’s the opposite of the nomodule attribute.
 
-This isn’t the absolute minimum, but it’s what I need im most sites I build. To round things up, I’ve added a bunch of tags to this post that we probably don’t need anymore and some others that you might need occasionally. If you want to learn more about the <head> element and its children, check out Josh Buchea’s fantastic repository HEAD.
-
-Did I get anything wrong or did I miss anything? Please tell me on Twitter or via e-mail.
-
-
-
-Other noteworthy elements
-<link rel="preload" href="font.woff2" as="font" type="font/woff2">
-Use preload if you want to ensure that specific resources are available earlier in the page lifecycle.
-
-Preloading content with rel="preload"
-Preload, Prefetch And Priorities in Chrome
-Prefetching, preloading, prebrowsing
 <link type="application/atom+xml" rel="alternate" href="/feed.xml" title="My Blog - Manuel Matuzovic">
-RSS Feed for your site.
 
 <meta name="format-detection" content="telephone=no">
-Disable automatic detection and formatting of phone numbers.
 
 <meta name="twitter:dnt" content="on">
-Disallow Twitter from using your site’s info for personalization purposes.
-
-Check out HEAD for much more.
-
-© 2019 - 2021
-legal
-twitter
-Back totop
