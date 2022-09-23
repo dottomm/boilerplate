@@ -1,59 +1,147 @@
-
-
 <!DOCTYPE html>
-<html lang="en" class="no-js">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width">
-
-  <title>Boilerplate Index - My Site</title>
-
-  <script type="module">
-    document.documentElement.classList.remove('no-js');
-    document.documentElement.classList.add('js');
-  </script>
-
-  <link rel="stylesheet" href="css/styles.css">
-  <link rel="stylesheet" href="css/print.css" media="print">
-
-  <meta name="Boilerplate description" content="Page description">
-  <meta property="og:title" content="Boilerplate Index" >
-  <meta property="og:description" content="Boilerplate Index description">
-  <meta property="og:image" content="https://tomboilerplate.netlify.app/images/bp-image.png">
-  <meta property="og:image:alt" content="Boilerplate Image">
-  <meta property="og:locale" content="en_GB">
-  <meta property="og:type" content="website">
-  <meta property="og:image" content="images/boilerplate.png">
-  <meta property="og:url" content="https://tomboilerplate.netlify.app">
-  <link rel="canonical" href="https://tomboilerplate.netlify.app">
-
-  <link rel="icon" href="/images/bp.ico">
-  <link rel="icon" href="/images/bp2.svg" type="image/svg+xml">
-  <!--<link rel="apple-touch-icon" href="/apple-touch-icon.png"> -->
-  <!--<link rel="manifest" href="/my.webmanifest"> -->
-  <meta name="theme-color" content="#FF00FF">
-  
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:site" content="@lumachknthieves">
   <meta name="twitter:creator" content="@lumachknthieves">
   <meta name="twitter:url" content="https://tomboilerplate.netlify.app">
   <meta name="twitter:title" content="Boilerplate">
   <meta name="twitter:description" content="Boilerplate Home page">
-  <meta name="twitter:image" content="https://tomboilerplate.netlify.app/images/boilerplate.png">
-</head>
+  <meta name="twitter:image" content="https://tomboilerplate.netlify.app/images/bp-logo.png">
 
-<body>
- 
-  <img src='images/bp-image.png' alt='boilerplate'>
+    
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    <title>Astro Crash Course</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="logo">
+          <a href="index.html">
+            <img src="img/logo.svg" alt="" />
+          </a>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="blog.html">Blog</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <section class="showcase">
+      <div class="showcase-text">
+        <h1>Welcome To The Astro Crash Course!</h1>
+        <p>
+          Build super fast HTML-first websites using your favorite JavaScript
+          frameworks
+        </p>
+      </div>
+      <div class="showcase-img">
+        <img class="logos" src="img/framework-logos.png" alt="" />
+        <img class="logos-small" src="img/framework-logos-small.png" alt="" />
+      </div>
 
-  <h1 id='Boilerplate-Website'>Boilerplate</h1>
+      <p class="showcase-demo">
+        <small>This is a demo website used for the YouTube crash course</small>
+      </p>
+    </section>
 
-  <address>
-    P:  555-555-0043
+    <section class="features">
+      <div class="container">
+        <div class="card">
+          <h3>Zero JavaScript Runtime</h3>
+          <p>
+            Astro renders HTML on the server and strips away any remaining,
+            unused JavaScript.
+          </p>
+        </div>
+        <div class="card">
+          <h3>The Power of Islands</h3>
+          <p>
+            Need interactive UI? Load individual, non-blocking component islands
+            in parallel.
+          </p>
+        </div>
+        <div class="card">
+          <h3>Lazy-Loading Islands</h3>
+          <p>
+            Components only hydrate when they scroll into view. If you don't see
+            it, Astro won't load it.
+          </p>
+        </div>
+      </div>
+    </section>
 
-  </address>
+    <section class="page-content">
+      <div class="container">
+        <h2>Get Started With Astro</h2>
+        <p>
+          Get a new Astro project up and running locally with our helpful
+          create-astro CLI wizard!
+        </p>
+        <!-- Tabs -->
+        <div class="tabs">
+          <ul class="tabs-header">
+            <li class="default-tab">NPM</li>
+            <li>PNPM</li>
+            <li>YARN</li>
+          </ul>
+          <ul class="tabs-content">
+            <li class="tab">
+              <code>$ npm create astro@latest</code>
+            </li>
+            <li class="tab">
+              <code>$ pnpm create astro@latest</code>
+            </li>
+            <li class="tab">
+              <code>$ yarn create astro</code>
+            </li>
+          </ul>
+        </div>
 
-</body>
+        <h3>Start Building</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta ipsum
+          deserunt inventore ut voluptate, officia maiores repellat tenetur
+          praesentium omnis est ex tempora a necessitatibus reiciendis at et
+          dignissimos. Ipsam eius consequuntur cupiditate aperiam porro, esse
+          laborum impedit nesciunt ut voluptatum assumenda aspernatur libero
+          iusto error molestias dolorum, necessitatibus labore?
+        </p>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div>
+          <h3>Astro</h3>
+          <p>
+            This is a demo website to show how the Astro framework works. Visit
+            the <a href="https://astro.build">official website</a> to learn
+            more.
+          </p>
+        </div>
+        <div>
+          <h3>Links</h3>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
 </html>
-
-
